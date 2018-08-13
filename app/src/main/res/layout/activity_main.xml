@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:layout_marginBottom="20sp"
+            app:srcCompat="@drawable/lock"
+            android:contentDescription="@string/to" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:layout_marginBottom="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email"
+            android:background="@drawable/fields"
+            android:padding="10sp"
+            android:inputType="textEmailAddress"
+            android:singleLine="false"
+            />
+
+        <EditText
+            android:id="@+id/editText4"
+
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:layout_marginBottom="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/fields"
+            android:padding="10sp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:singleLine="false"
+
+
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="100sp"
+            android:layout_marginRight="100sp"
+            android:layout_marginBottom="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textColor="@color/colorWhite"
+            android:text="@string/button" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="62sp"
+            app:srcCompat="@android:drawable/btn_star_big_on"
+            android:contentDescription="@string/tod" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
